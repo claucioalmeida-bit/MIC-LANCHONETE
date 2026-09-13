@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mic Lanchonete</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #fff; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+        /* Cabeçalho */
+        header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px; }
+        .status { background: #c0392b; display: inline-block; padding: 5px 15px; border-radius: 20px; margin: 10px 0; }
+        .contato-header { margin-top: 10px; font-size: 1.1em; }
+        .contato-header a { color: white; font-weight: bold; }
+
+        /* Seções */
+        section { margin: 30px 0; }
+        h2 { color: #e74c3c; border-bottom: 2px solid #f39c12; padding-bottom: 10px; margin-bottom: 20px; }
+
+        /* Cardápio */
+        .categoria { margin: 20px 0; }
+        .categoria h3 { background: #f8f9fa; padding: 12px; border-radius: 6px; }
+        .item { padding: 8px 15px; border-bottom: 1px solid #eee; }
+
+        /* Pagamento */
+        .pag-opcoes { background: #f8f9fa; padding: 20px; border-radius: 8px; }
+        .pag-opcoes label { display: block; margin: 10px 0; font-size: 1.1em; }
+
+        /* Botões */
+        .btn { background: #27ae60; color: white; border: none; padding: 12px 25px; border-radius: 6px; font-size: 1.1em; cursor: pointer; width: 100%; margin: 15px 0; }
+        .btn:hover { background: #219653; }
+
+        /* Contato */
+        .info-contato { line-height: 1.8; }
+        .info-contato a { color: #e74c3c; font-weight: bold; }
+
+        /* Rodapé */
+        footer { text-align: center; color: #666; font-size: 0.9em; padding: 20px; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <h1>MIC LANCHONETE</h1>
+            <div class="status">🔴 Fechado agora | <a href="#horarios" style="color:white">Ver Horários</a></div>
+            <div class="contato-header">
+                📞 (92) 99357-0661 | 📍 Cidade de Deus, Manaus - AM<br>
+                ⏱️ Entrega: 50 a 70 minutos
+            </div>
+        </header>
+
+        <!-- Sobre / Horários -->
+        <section id="horarios">
+            <h2>🕒 Horário de Atendimento</h2>
+            <p><strong>Funcionamento:</strong> Todos os dias – 24h por dia, 7 dias por semana</p>
+            <p><strong>Status atual:</strong> Fechado</p>
+        </section>
+
+        <!-- Cardápio -->
+        <section id="cardapio">
+            <h2>📋 Nosso Cardápio</h2>
+
+            <div class="categoria">
+                <h3>🎁 Promoções</h3>
+                <div class="item">Combo Especial - Preço: R$ 00,00</div>
+                <div class="item">Promoção Lanche + Refrigerante</div>
+            </div>
+
+            <div class="categoria">
+                <h3>🍔 Hambúrgueres</h3>
+                <div class="item">Tradicional - R$</div>
+                <div class="item">Duplo Bacon - R$</div>
+            </div>
+
+            <div class="categoria">
+                <h3>🌭 Hot Dogs</h3>
+                <div class="item">Simples - R$</div>
+                <div class="item">Completo - R$</div>
+            </div>
+
+            <div class="categoria">
+                <h3>🍕 Pizzas</h3>
+                <div class="item">Mussarela - R$</div>
+                <div class="item">Calabresa - R$</div>
+            </div>
+
+            <div class="categoria">
+                <h3>🥗 Refeições</h3>
+                <div class="item">Prato Completo - R$</div>
+                <div class="item">Porções - R$</div>
+            </div>
+
+            <div class="categoria">
+                <h3>🥤 Bebidas</h3>
+                <div class="item">Refrigerantes, Sucos, Água</div>
+            </div>
+        </section>
+
+        <!-- Pagamento - Mercado Pago -->
+        <section id="pagamento">
+            <h2>💳 Formas de Pagamento</h2>
+            <div class="pag-opcoes">
+                <p><strong>✅ Pagar Online (Seguro via Mercado Pago)</strong></p>
+                <label><input type="radio" name="pag"> ⚡ Pix (Aprovação rápida)</label>
+                <label><input type="radio" name="pag"> 💳 Cartão de Crédito (À vista/Parcelado)</label>
+                <label><input type="radio" name="pag"> 💳 Cartão de Débito</label>
+
+                <p style="margin-top:20px;"><strong>✅ Pagar na Entrega / Retirada</strong></p>
+                <label><input type="radio" name="pag"> 💵 Dinheiro</label>
+                <label><input type="radio" name="pag"> 💳 Cartão na hora</label>
+                <label><input type="radio" name="pag"> 📱 Pix Presencial</label>
+
+                <button class="btn">Finalizar Pedido</button>
+                <p style="font-size:0.9em; color:#555;">🔒 Pagamento processado pelo Mercado Pago</p>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>📞 Contato e Localização</h2>
+            <div class="info-contato">
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/5592993570661" target="_blank">(92) 99357-0661</a></p>
+                <p><strong>Telefone:</strong> <a href="tel:92993570661">(92) 99357-0661</a></p>
+                <p><strong>Endereço:</strong> Av Nossa Senhora de Fátima, Nº 400 – Bairro Cidade de Deus<br>Manaus/AM – Referência: Próximo à Bolinha</p>
+                <p><a href="https://maps.google.com" target="_blank">📍 Ver Rotas no Mapa</a></p>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>Mic Lanchonete © 2026 | Todos os direitos reservados</p>
+            <p>Funcionamento: 24h | Pagamento via Mercado Pago</p>
+        </footer>
+    </div>
+
+    <!-- Integração Mercado Pago -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script>
+        // Coloque aqui sua Chave Pública do Mercado Pago
+        const mp = new MercadoPago("SUA_CHAVE_PUBLICA_AQUI");[[_LINK_ICON]](https://www.mercadopago.com.ar/developers/es/docs/checkout-pro/web-integration/add-frontend-sdk?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiJlNTY1ZmFiZjFjN2QyM2U5LTQ0OGMzM2Q3MDkzMWM3NzgifQ%3D%3D "[_LINK_ICON]")
+        console.log("Mercado Pago carregado – configure suas credenciais no painel");
+    </script>
+</body>
+</html>
